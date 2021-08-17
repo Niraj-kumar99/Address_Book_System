@@ -6,12 +6,12 @@ public class Contact_info {
     private String address;
     private String city;
     private String state;
-    private String pinCode;
-    private String phoneNumber;
+    private Long pinCode;
+    private Long phoneNumber;
     private String emailID;
 
     public Contact_info(String firstName , String lastName , String address , String city ,
-                        String state , String pinCode , String phoneNumber , String emailID)
+                        String state , Long pinCode , Long phoneNumber , String emailID)
     {
         this.firstName = firstName;
         this.lastName = lastName;
@@ -67,19 +67,19 @@ public class Contact_info {
         this.state = state;
     }
 
-    public String getPinCode() {
+    public Long getPinCode() {
         return pinCode;
     }
 
-    public void setPinCode(String pinCode) {
+    public void setPinCode(Long pinCode) {
         this.pinCode = pinCode;
     }
 
-    public String getPhoneNumber() {
+    public Long getPhoneNumber() {
         return phoneNumber;
     }
 
-    public void setPhoneNumber(String phoneNumber) {
+    public void setPhoneNumber(Long phoneNumber) {
         this.phoneNumber = phoneNumber;
     }
 
